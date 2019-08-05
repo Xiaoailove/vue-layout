@@ -1,0 +1,17 @@
+@import "mixins"
+$width=1000px
+
+#wrap
+  width $width
+  background-color  red
+  clearfix()
+  //display inline-block
+  .inner1,.inner2
+    float left
+    width 300px
+    height  200px
+  .inner1
+    background-color  blue
+  .inner2
+    background-color  green
+  

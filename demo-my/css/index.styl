@@ -1,0 +1,174 @@
+@import "reset.css"
+@import "mixins.styl"
+#app
+  width 100%
+  height 100%
+  #content
+    width 100%
+    height 100%
+    padding-bottom 50px
+    padding-top 45px
+    background-color #F5F5F5
+    box-sizing border-box
+    #header
+      width 100%
+      height 45px
+      position fixed
+      left 0
+      top 0
+      background-color #02a774
+      border-bottom 1px solid white
+      box-sizing border-box
+      .myText
+        color white
+        height 45px
+        line-height 45px
+        width 100%
+        text-align center
+        font-size 25px
+    #main
+      width 100%
+      height 100%
+      .top
+        width 100%
+        height 200px
+        .topLogin
+          clearFix()
+          width 100%
+          height 100px
+          background #02a774
+          padding 0 10px
+          box-sizing border-box
+          display flex
+          align-items center
+          .personA
+            width 45px
+            height 45px
+            font-size 45px
+            overflow hidden
+            border-radius 50%
+            background-color white
+            color #7e8c8d
+            margin-right 10px
+          .register
+            display flex
+            flex-direction column
+            .login
+              color white
+              font-size 18px
+              font-weight bold
+              margin-bottom 10px
+            .phone
+              color white
+              font-size 15px
+              .icon-mobile
+                font-size 30px
+                vertical-align text-top
+                margin-left -15px
+                margin-right -15px
+          .arrow
+            padding-left 160px
+            color white
+        .topBottom
+          width 100%
+          height 50%
+          background-color #ffffff
+          .topBottomInner
+            display flex
+            height 100%
+            .info-data-link
+              display flex
+              width 33%
+              height 100%
+              flex-direction column
+              align-items center
+              justify-content center
+              border-right 1px solid #f1f1f1
+              .info_data_top
+                font-size 16px
+                font-weight bold
+                margin-bottom 15px
+                span
+                  font-size 26px
+                .yue
+                  color #f90
+                .youHui
+                  color #ff5f3e
+                .jiFen
+                  color #6ac20b
+                  border 0px
+              .info_data_bottom
+                font-size 16px
+                color #666
+                font-weight 400px
+      .middle
+        width 100%
+        height 160px
+        margin 10px 0
+        background #ffffff
+        padding-left 15px
+        box-sizing border-box
+        .myOrder
+          width 100%
+          height 33%
+          display flex
+          align-items center
+          border-bottom 1px solid #e4e4e4
+          .orderIcon
+            .icon-order-s
+              font-size 30px
+              color #02a774
+            .icon-jifen
+              font-size 30px
+              color #ff5f3e
+            .icon-vip
+              font-size 30px
+              color #f90
+          .myOrderDiv
+            font-size 20px
+            font-weight bold
+            .myOrderIcon
+              font-size 16px
+              margin-left 215px
+      .bottom
+        width 100%
+        height 50px
+        background #ffffff
+        .myOrder
+          width 100%
+          height 100%
+          display flex
+          align-items center
+          .orderIcon
+            .icon-fuwu
+              color #02a774
+              font-size 30px
+          .myOrderDiv
+            font-size 20px
+            font-weight bold
+          .myOrderIcon
+            font-size 16px
+            margin-left 215px
+  #footer
+    top-border-1px(#02a774)
+    width 100%
+    height 50px
+    position fixed
+    left 0px
+    bottom 0px
+    display flex
+    .footerItem
+      width 25%
+      height 100%
+      display flex
+      flex-direction column
+      align-items center
+      justify-content center
+      color #7e8c8d
+      &.active
+        color green
+      .iconfont
+        font-size 22px
+      span
+        font-size 12px
+

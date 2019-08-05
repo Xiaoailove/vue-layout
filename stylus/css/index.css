@@ -1,0 +1,21 @@
+#wrap {
+  width: 1000px;
+  background-color: #f00;
+}
+#wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#wrap .inner1,
+#wrap .inner2 {
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+#wrap .inner1 {
+  background-color: #00f;
+}
+#wrap .inner2 {
+  background-color: #008000;
+}

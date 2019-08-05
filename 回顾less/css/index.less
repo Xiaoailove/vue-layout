@@ -1,0 +1,20 @@
+@import "mixins";
+@width:800px;
+
+#wrap{
+  .clearfix();
+  width: @width;
+  background-color: red;
+  //display:inline-block;
+  .inner1,.inner2{
+    float:left;
+    width:300px;
+    height: 200px;
+  }
+  .inner1{
+    background-color: blue;
+  }
+  .inner2{
+    background-color: green;
+  }
+}

@@ -1,0 +1,101 @@
+@import "reset.css"
+@import "mixins.styl"
+
+#app 
+  width  100%
+  height  100%
+  #content 
+    width  100%
+    height   100%
+    padding-top 45px
+    padding-bottom  50px
+    box-sizing border-box
+    .main
+      display none
+      &.show
+        display block
+    #header
+      width 100%
+      height 45px
+      background-color #02a774
+      position   fixed
+      left 0
+      top  0
+      display flex
+      justify-content space-around
+      align-items center
+      color white
+      .iconfont
+        font-size 25px
+      #address
+        font-size 20px
+        width 188px
+        overflow: hidden
+        text-overflow ellipsis
+        white-space nowrap
+      #login
+        display flex
+        font-size 15px
+    .swiper-container
+      width: 100%;
+      height 200px
+      .swiper-pagination-bullet-active
+        background-color: #02a774;
+      .swiper-slide
+        display flex
+        flex-wrap wrap
+        .slideItem
+          display flex
+          align-items center
+          justify-content space-around
+          width 25%
+          height 72px
+          flex-direction column
+          img
+            width 50px
+            height 50px
+          span
+            font-size 13px
+            color #7e8c8d
+
+    #shop_rating
+      .shopItem
+        .starList
+          display flex
+          .star
+            width 10px
+            height 10px
+            bg_image(star_off);
+            //background-image: url(../images/stars/star_off@2x.png);
+            background-size: 100% 100%;
+            &.on
+              bg_image(star_on);
+              //background-image: url(../images/stars/star_on@2x.png);
+            &.half
+              bg_image(star_half);
+              //background-image: url(../images/stars/star_half@2x.png);
+  #footer
+    top-border-1px(#02a774)
+    position fixed
+    left   0
+    bottom  0
+    width  100%
+    height   50px
+    display   flex
+    .footerItem
+      width 25%
+      height 100%
+      display  flex
+      flex-direction column
+      align-items center
+      justify-content   center
+      color  #7e8c8d
+      &.active
+        color  green
+      .iconfont
+        font-size 22px
+      span
+        font-size   12px
+
+   
+ 
